@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- CHANGE YOUR NAME -->
+  <title>Tick Tick Run!!</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="shortcut icon" href="images/smile.png"  type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/flexslider/flexslider.css">
+  <link rel="stylesheet" href="css/colorblocks-style.css">
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+<style>
+mark { 
+  background-color: white;
+  color: darkblue;
+}
+</style>
+</head>
+
+
+<body id="home">
+    <header class="wrapper clearfix">
+		       
+        <div id="banner">        
+        	<div id="logo"><a href=""><img src="images/logo.png" alt="logo" height="30%" width="30%"></a></div> 
+        </div>
+
+        <nav id="topnav" role="navigation">
+          <div class="menu-toggle">Menu</div>  
+            <ul class="srt-menu" id="menu-main-navigation" style="padding-bottom: 10px;">
+              <li class="current"><a href="index.html">Home</a></li>
+             <li>
+        				<a href="index.html">Assignments</a>
+        				<ul>
+                	<li><a href="AssignmentOne.html">Getting Started With GitHub</a></li>
+        					<li><a href="AssignmentTwo.html">Through Junctions</a></li>
+        					<li><a href="AssignmentThree.html">Hold it round</a></li>
+        					<li><a href="AssignmentFour.html">Sparkonics</a></li>
+                  <li><a href="AssignmentSix.html">Throughout Producing Electronics</a></li>
+
+                  <li><a href="AssignmentFive.html">Tick Tick Run</a></li>
+        				</ul>
+        			</li>
+              <li><a href="final.html">Final Project</a></li>
+            </ul>     
+        </nav>
+  
+    </header><!-- end header -->
+ 
+    <section id="page-header" class="clearfix">    
+   
+    <div class="wrapper">
+      <h1><b>Tick Tick Run!!</b></h1>
+            		<video width="420" height="340" loop autoplay controls>
+                <source src="videos/stickman running.mp4" type="video/mp4">
+                <source src="videos/stickman running.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                 </video>
+
+    </div>
+    </section>
+
+<div id="main" class="wrapper clearfix">    
+    
+	<section id="content">
+    <!-- ADD YOUR THE STEPS OF YOUR DOCUMENTATION BELOW -->
+    <!-- TO ADD IMAGES YOU WILL FIND IMG TAGS BETWEEN PARAGRAPHS -->
+    <!-- ADD THE NAME OF YOUR FILE -->
+                <h1><b>Overview</b></h1>
+                <p>Before man had the luxury of 4k videos and high-quality visuals production, creating the illusion of motion was not so fancy. Back in 1860, the first <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiD3OKnwJ36AhXSNcAKHadxAnMQFnoECAQQAw&url=https%3A%2F%2Fblog.flipsnack.com%2Fthe-history-of-flipbooks%2F%23%3A~%3Atext%3DHowever%252C%2520it%2520wasn%27t%2520until%2CBritain%2520officially%2520patented%2520the%2520design.&usg=AOvVaw0o0PFo007fSzvULrCzwXNN
+"> flipbook </a>was created opening doors later to more sophisticated <a href="https://www.youtube.com/watch?v=Q0Lj3ha3XF8">stop motion</a> applications. 
+The whole thing about videos is to play the right light on the right time, our brains do the rest and fill the gaps between them. The objective of this circuit is to give Bahgat "running up there" a chance to wave, run, then celebrate just with a few “not so few” ics. 
+
+</p>
+
+
+<h1><b>Index</b></h1>
+                <ul><h3>
+                  <li>Timer Setup</li>
+                  <li>Counter Setup</li>
+                  <li>Drafting Motion</li>
+                  <li>Man to Machine</li>
+                  <li>Logic Circuit</li>
+                  <li>Implementing the Circuit</li>
+                  <li>Tips and Errors</li>
+                </h3></ul>
+
+<h1><b>Timer Setup</b></h1>
+
+<p>A 555 <a href="https://www.ti.com/lit/ds/symlink/ne555.pdf">timer</a> in Astable state -p.11 in the datasheet- takes 5 volts and outputs a square wave. Tick tock one zero, and it theoretically loops forever. Here is the schematic of the circuit:</p>
+<img src="images/bahgat10.jpg">
+<p>The details of how the circuit works is irrelevant now. All we need to know is that output pin 3 in the above circuit will give us a clock signal, and that is enough. 
+</p>
+
+<h1><b>Counter Setup</b></h1>
+
+<p>To create the illusion of motion, we need to turn power on and off repeatedly. Doing so with buttons would practically corrupts the whole trick behind stop motion. That is why we need a <a href="https://www.electroschematics.com/wp-content/uploads/2013/07/7493-datasheet.pdf">counter</a> ic.   
+</p>
+<img src="images/bahgat11.jpg">
+<p>All it does is take a square wave and give a binary 1-15 count. The details of how the circuit works is irrelevant now. All we need to know is that CKA will take a square wave and give 15 binary numbers in order from QA-QD, and that is enough. </p>
+<p>Ps: all circuit connections and Tinkercad schematics/projects are attached in the Refer to section. </p>
+
+
+
+<h1><b>Drafting Motion</b></h1>
+
+<p><h2><mark>Clear Definition</mark></h2>What exactly do we want the motion to look like? Below is my initial brainstorming sketch, it helps defining different positions later. 
+</p>
+<img src="images/bahgat1.jpeg" width="500" height="1000">
+
+<p><h2><mark>Dismantling</mark></h2> After drawing different positions individually, we need to break them down to smaller parts for easier manipulation. For example, in this sketch the head “position 1” is repeated in all positions. Now we are not going to create a head for each piece of motion, but we will give the same head a true signal every time. Another example is the smile “position 11”. This one is active only in motions 2 and 5, so it will get a true signal ONLY in motions 2 and 5. And life goes on…
+</p>
+<P>Putting different pieces of motion over each other allows eliminating the overlapping parts. You can visualize and draw or just use <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiekcrQzp36AhVUnFwKHRHDBUIQFnoECCgQAQ&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FTracing_paper&usg=AOvVaw35v9phMR9kii1HSZKI6Atb">tracing paper</a> to draw them individually then put all the layers together and trace the whole figure. 
+
+
+
+
+
+
+
+
+<p><h2><mark>Assembly</mark></h2> Now we can reassemble the small positions to view Bahgat in one piece again. Just check your initial pieces of motion and turn on all the corresponding positions; see below for more illustration
+</p>
+<img src="images/bahgat3.jpeg" width="500" height="1000">
+
+<p>Now we have a definite roadmap. Turn X on, Turn Y on, Turn z off or whatever. This expression is exactly how humans communicate with tech. The script is ready but yet to be translated. 
+</p>
+
+                <h1><b>Man to Machine</b></h1>
+<p>In the table below, the left side represents the counter output truth table. It is fixed. The right side is our truth table: which positions do we need true and when.</p>
+<p>
+Ps: positions 1&2 “the head and body” are always True, so I connected them directly to the power source to minimize complexity “the circuit is already messed up”. 
+</p>
+<img src="images/bahgat12.jpg">
+<p>After creating the truth table, make sure positions that only appear together and no where else are connected together. It makes life way easier and reduces the number of outputs, like positions 4&6 below or 5&7. They could have been merged together. 
+</p>
+<img src="images/bahgat13.jpg" width="1500"height="1000">
+
+<h1> <b>Logic Circuit</b></h1>
+<p>To obtain these very specific Boolean combinations, a bunch of logic gates allow current to flow from the clock to only the desired positions. What gates to use and where? You are very welcome to try and draw your own <a href="https://www.youtube.com/watch?v=FPrcIhqNPVo">K map</a>. But life is too short to do it manually; I used <a href="https://circuitverse.org/">CircuitVerse</a>. All you need to do is insert the truth table “the blue big thing we created in the previous step” and watch the software do its magic.</p>
+
+<p>Ps: find a detailed tutorial on how to use CircuitVerse in the references section below. </p>
+<p>You should end up with a table like this</p>
+<img src="images/bahgat14.jpg" width="1500"height="1000">
+<h3>Generate the circuit and do not freak out…
+</h3>
+<img src="images/bahgat15.jpg" width="1500"height="1000">
+<p>The circuit looks awful, but a small trick to reduce the agony is to copy-paste a screenshot of it into any photo editor and put marks on the wires you are done connecting. See below for illustration
+</p>
+<img src="images/bahgat16.jpg" width="1000" height="500">
+
+
+<h1><b>Implementing the Circuit</b></h1>
+<h2>There are 3 types of logic gates used here: </h2>
+
+
+  <li>Inverter: takes one input and outputs the opposite</li>
+  <li>AND: usually takes two inputs and returns true ONLY if they are both true </li>
+  <li>OR: usually takes two inputs and returns true if either one is true</li>
+ 
+         <img src="images/bahgat17.jpg" width="400" height="300">
+<p>But in the circuit generated above, there are AND & OR gates with three and four inputs!!
+</p>
+<p></p>
+<p>Simply enough, build a new gate with three/two other gates. take the first two inputs into the first gate, take the output and the third input with a second gate, then take the last input with the second gate output into the third gate. See below to visualize better…
+</p>
+        <img src="images/bahgat18.jpg" width="400" height="300">
+        <p>Same goes with the OR gates</p>
+         <img src="images/bahgat19.jpg" width="400" height="300">  
+         <p>These integrated circuits are all available in Tinkercad, they make life easier so make sure to pick the right ic according to the number of inputs you have. Below are all the schematics you will need for this specific circuit
+</p>
+
+         <img src="images/bahgat20.jpg" width="600" height="500"> 
+<h1><b>Tinkercad </b></h1>
+         <img src="images/bahgat21.jpg" width="600" height="500"> 
+         <p>It is not the most straight forward circuit, but a few hacks may make things a bit less eye-straining
+</p>
+<p><h2><mark>Color codes</mark></h2> Use a single color for the wires of each clock, and adjust ground and vcc to black and red. In small circuits it does not make a huge difference, but here if you get lost you will suffer. 
+</p>
+
+<p><h2><mark>Pull away</mark></h2> Tinkercad knows when you connect two terminals. If you pull a component away, the connection will be intact. That is important in a component like the inverter; too many connections and your cursor might not catch the terminal because of the wires. Pulling it away will help you select without accidently holding a wrong wire and crying later. 
+</p>
+
+<p><h2><mark>Label</mark></h2>  Give outputs and components readable names to keep track of this mess. Especially that each ic will host many gates from the schematic. 
+</p>
+<p></p>
+<p></p>
+<p></p>
+
+
+<h1 style="text-align:center;color:red"><i>DO NOT DO THIS</i></h1>
+<h1><b>Tips and Errors</b></h1>
+
+<p><h2><mark>Two separate circuits do not operate without common ground</mark></h2> Because ground is relative, for two circuits exchanging signals to be in sync they must have a common ground. Since Tinkercad is just a sim, the circuit did not breathe at all. In reality, it should work but behave unexpectedly. 
+</p>
+
+<p><h2><mark>Connecting different LEDs</mark></h2> To visually represent our figure, many LEDs need to be connected together. Connect them in parallel to minimize voltage drop, especially that ics output low voltages. 
+</p>
+
+<p><h2><mark>Simulator errors</mark></h2> Your own wellbeing is more important than anything. Sometimes, the simulation will not work as expected and there will not be a problem with the circuit, don’t consume much of your brain power if you are fairly sure the connection is fine. Go fry potatoes and chill. 
+</p>
+
+
+
+<h1><b>References</b></h1>
+<p>[1]  <a href ="https://circuitverse.org/users/144581/projects/tick-tick-runn"> CircuitVerse project </a></p>
+<p>[2]<a href = "https://youtu.be/kl9GC_VxAcU"> CircuitVerse guide</a></p> 
+<p>[3]<a href="https://socratic.org/questions/and-gate-is-formed-by-using-two-1-or-2-nand-3-not-4-nor"> Logic gates</a></p>
+<p>[4]<a href="https://www.tinkercad.com/things/8e53phsi19T-counter-/editel?sharecode=r52ptao1zUEduPISNgHhh5c315gfHF6OE70eG67Azm0"> Tinkercad sim</a></p>
+
+<p>[5]<a href="https://www.deviantart.com/cyndergirl211/art/Run-stickman-run-GIF-465529756"> Stickman</a></p>
+
+
+
+
+</section><!-- #end content area -->
+      
+      
+    <!-- sidebar -->    
+    <aside>
+        <h2>See Also: </h2>
+            <nav id="secondary-navigation">
+                    <ul>
+                         					<li><a href="AssignmentOne.html">Getting Started With GitHub</a></li>
+        					<li><a href="AssignmentTwo.html">Through Junctions</a></li>
+        					<li><a href="AssignmentThree.html">Hold it round</a></li>
+                  <li><a href="AssignmentSix.html">Throughout Producing Electronics</a></li>
+        					
+                    </ul>
+             </nav>
+      </aside><!-- #end sidebar -->
+    
+    
+    
+</div><!-- #end div #main .wrapper -->
+
+
+
+
+
+<!-- footer area -->    
+<footer>
+        <div id="colophon" class="wrapper clearfix">
+          <h2 style="padding-left: 30px;">PROUDLY MADE BY MAKERS</h2>
+            <img src="images/logo.png" height="30%" width="30%">
+        </div>
+        
+    </footer><!-- #end footer area --> 
+
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js">\x3C/script>')</script>
+
+<script defer src="js/flexslider/jquery.flexslider-min.js"></script>
+
+<!-- fire ups - read this file!  -->   
+<script src="js/main.js"></script>
+
+</body>
+</html>

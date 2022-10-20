@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- CHANGE YOUR NAME -->
+  <title>Throughout Producing Electronics</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="shortcut icon" href="images/smile.png"  type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/flexslider/flexslider.css">
+  <link rel="stylesheet" href="css/colorblocks-style.css">
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+<style>
+mark { 
+  background-color: white;
+  color: darkblue;
+}
+</style>
+</head>
+
+
+<body id="home">
+    <header class="wrapper clearfix">
+		       
+        <div id="banner">        
+        	<div id="logo"><a href=""><img src="images/logo.png" alt="logo" height="30%" width="30%"></a></div> 
+        </div>
+
+        <nav id="topnav" role="navigation">
+          <div class="menu-toggle">Menu</div>  
+            <ul class="srt-menu" id="menu-main-navigation" style="padding-bottom: 10px;">
+              <li class="current"><a href="index.html">Home</a></li>
+             <li>
+        				<a href="index.html">Assignments</a>
+        				<ul>
+                	<li><a href="AssignmentOne.html">Getting Started With GitHub</a></li>
+        					<li><a href="AssignmentTwo.html">Through Junctions</a></li>
+        					<li><a href="AssignmentThree.html">Hold it round</a></li>
+        					<li><a href="AssignmentFour.html">Sparkonics</a></li>
+                  <li><a href="AssignmentFive.html">Tick Tick Run</a></li>
+                  <li><a href="AssignmentSix.html">Throughout Producing Electronics</a></li>
+        				</ul>
+        			</li>
+              <li><a href="final.html">Final Project</a></li>
+            </ul>     
+        </nav>
+  
+    </header><!-- end header -->
+ 
+    <section id="page-header" class="clearfix">    
+   
+    <div class="wrapper">
+      <h1><b>Producing Electronics</b></h1>
+       <img src="images/pcb1.jpg" width="600" height = "600">
+         
+    </div>
+    </section>
+
+<div id="main" class="wrapper clearfix">    
+    
+	<section id="content">
+    <!-- ADD YOUR THE STEPS OF YOUR DOCUMENTATION BELOW -->
+    <!-- TO ADD IMAGES YOU WILL FIND IMG TAGS BETWEEN PARAGRAPHS -->
+    <!-- ADD THE NAME OF YOUR FILE -->
+                <h1><b>Overview</b></h1>
+                <p>From paper sketches to rough copper boards, electronics production -specifically pcbs- is a multistep process. Though not the hardest in the core, it requires practice for clean production.</p>
+
+
+<h1><b>Index</b></h1>
+                <ul><h3>
+                  <li>Software Setup</li>
+                  <li>Sketching and Defining</li>
+                  <li>Inserting and Wiring</li>
+                  <li>Layout Design and Routing</li>
+                  <li>Error</li>
+                  <li>Layers and Images</li>
+                  <li>FabModules</li>
+                  <li>Check and Export</li>
+                  <li>Execute</li>
+                </h3></ul>
+
+<h1><b>Software Setup</b></h1>
+                <p><a href="https://componentsearchengine.com/library/eagle?gclid=Cj0KCQjwj7CZBhDHARIsAPPWv3cAddZqywn6dE4gkslN8py6YbIMGGdlpvoDZ8f_YYTZazTsBYvMno4aAj2HEALw_wcB">Eagle</a> is pretty straightforward to install. Though in the setup, you might encounter a crash error. After installation, the software sometimes does not work properly. Try out the steps below:</p>
+                <li>Navigate to "C:\EAGLE 9.x" and find the file "LIBEAY32.dll".</li>
+                <li>Rename the .dll by appending .bak at the end of the file name: "LIBEAY32.dll.bak".</li>
+                <li>Launch Eagle again, the program should open with no issue. </li>
+                
+                <img src="images/pcb2.jpg" height = "50%" width="60%">
+           
+
+<h1><b><i>Sketching and Defining</i></b></h1>
+
+<p>As usual and before bringing anything to life, we do paper sketches –then CAD – then  CAM. </p>
+
+<p>Below is a sketch for the circuit and connections...</p>
+
+
+                <img src="images/pcb11.jpg" height = "50%" width="60%">
+
+<p>To electronically represent this sketch, we need to insert Eagle components and do the wiring through the software. Here is a quick <a href=https://www.youtube.com/watch?v=eY5_Oxsqb_g>tutorial</a> on how to add and wire different parts of your sketched circuit. </p>
+
+<p>Here are the specific components used for this project.
+</p>
+
+
+                <img src="images/pcb12.jpg" height = "50%" width="60%">
+
+                <p>You should end up with something like this</p>
+                <img src="images/pcb13.jpg" height = "50%" width="60%">
+<p>Use the <a href= https://www.youtube.com/watch?v=KkbF46M_jOM>labels</a> feature to clean the design and create better, more readable documentation.</p>
+
+
+<h1><b>Layout Design and Routing</b></h1>
+
+
+<p>Now switch your view for a little bit of a puzzle 
+</p>
+
+                <img src="images/pcb14.jpg" height = "50%" width="60%">
+
+<p>Air-wire all the components in a most logical order for a small, neat, functional pcb. Here is a quick <a href= https://www.youtube.com/watch?v=IichPPq3Vfw > guide </a>on how to do so.</p>
+
+
+               <img src="images/pcb15.jpg" height = "50%" width="60%">
+
+<p>Reduce the outer frame size to fit the pcb without extra useless space. </p>
+
+
+               <img src="images/pcb16.jpg" height = "50%" width="60%">
+
+
+
+<h1><b>Pre-export Checklist</b></h1>
+
+     <li><b>Radsnest:</b> checks for optimal connection</li>
+    <li><b>DRC:</b> make sure to update it with the settings of your machine. </li>
+    <li><b>Common ground plane:</b> without a common ground, the circuit will not be in sync and will not work properly.  </li>
+    <li><b>Signal integrity:</b> try to connect airwires in 45 degree angles or just straight lines to minimize power disruption. </li>
+    <li><b>Check urc for errors:</b> not necessarily wrong, maybe doublecheck and save hours of blind debugging. </li>
+    <h1>Next Up</h1>
+<p>To export the CAD files, open view/layers then hide everything and display pads and bottom layers alone; in settings/misc/display drills. Export png. Show dimensions alone. Export png. Show drills alone. Export png.  </p>
+
+              <img src="images/pcb17.jpg" height = "40%" width="40%">
+
+              <p>Flip these images horizontally to eliminate the mirror effect resulting from drawing on the bottom layer instead of the top. 
+Only with the drills image we will need to fill in the black space in the image.
+</p>
+              <img src="images/pcb18.jpg" height = "50%" width="60%">
+
+
+              <p> CAM system used, FabModules, defines the path of the machine based on the color flip from black to white or vise versa. The drills image has two different borders for each drill; this way the output will be separated islands of copper from the entire circuit. 
+A proposed solution for this is to use jumpers but they will look awful and are impractical. 
+Simply fill the big black color with white color and voila, problem solved. </p>
+
+
+<h1><b>FabModules: CAM</b></h1>
+<p>Open the <a href=https://mods.cba.mit.edu/>link </a>, right click, open server programs, pcb png, a bunch of function should appear </p>
+              <img src="images/pcb20.jpg" height = "80%" width="80%">
+
+
+<p> Ps: they are built to interact with as functions. You literally pull the output from one box and drag it into the input of another. 
+
+Import the first image, set the cut depth and offset. High offsets might result in a broken pcb, specialy if the machine is not super duper good. 2 is an average offset. 
+Click calculate and check the design 
+</p>
+
+            <img src="images/pcb21.jpg" height = "80%" width="80%">
+
+            <p>The previous design for example is self-intersecting everywhere. It is like a sea of electrons floating everywhere. These redlines represent the machine’s movement in the air. 
+</p>
+
+            <img src="images/pcb22.jpg" height = "90%" width="90%">
+            <p>This is a way cleaner design will less offsets. If the number of offsets is important and unchangeable, we might use a smaller endmill; but this is dependent upon the accuracy of the machine. 
+</p>
+<p>About the frame, I set a 1 offset yet the view was like…
+</p>
+            <img src="images/pcb24.jpg" height = "60%" width="60%">
+<p>The problem was with the black/white thing. Make sure to import a frame in the eagle design board to maintain the dimensions of the exported image. When I did not import a frame, the software stretched the image to fill the screen, creating that extra boundary. 
+</p>
+           <img src="images/pcb25.jpg" height = "60%" width="60%">
+           <p>Now right click anywhere, modules, open server programs, save.
+</p>
+           <img src="images/pcb26.jpg" height = "60%" width="60%">
+           <p>Press save and that is it!
+
+Find a machine to print these files. Calibrate the bed and goodluck debugging whatever pops up.
+:)
+</p>
+
+</section><!-- #end content area -->
+      
+      
+    <!-- sidebar -->    
+    <aside>
+        <h2>See Also: </h2>
+            <nav id="secondary-navigation">
+                    <ul>
+                         					<li><a href="AssignmentOne.html">Getting Started With GitHub</a></li>
+        					<li><a href="AssignmentTwo.html">Through Junctions</a></li>
+        					<li><a href="AssignmentThree.html">Hold it round</a></li>
+        					
+                    </ul>
+
+           </nav>
+      </aside>
+    
+</div><!-- #end div #main .wrapper -->
+
+
+
+
+
+<!-- footer area -->    
+<footer>
+        <div id="colophon" class="wrapper clearfix">
+          <h2 style="padding-left: 30px;">PROUDLY MADE BY MAKERS</h2>
+            <img src="images/logo.png" height="30%" width="30%">
+        </div>
+        
+    </footer><!-- #end footer area --> 
+
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js">\x3C/script>')</script>
+
+<script defer src="js/flexslider/jquery.flexslider-min.js"></script>
+
+<!-- fire ups - read this file!  -->   
+<script src="js/main.js"></script>
+
+</body>
+</html>

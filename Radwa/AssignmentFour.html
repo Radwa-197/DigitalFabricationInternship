@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <!-- CHANGE YOUR NAME -->
+  <title>Sparkonics</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link rel="shortcut icon" href="images/smile.png"  type="image/x-icon">
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Ubuntu' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="js/flexslider/flexslider.css">
+  <link rel="stylesheet" href="css/colorblocks-style.css">
+  <script src="js/libs/modernizr-2.6.2.min.js"></script>
+<style>
+mark { 
+  background-color: white;
+  color: darkblue;
+}
+</style>
+</head>
+
+
+<body id="home">
+    <header class="wrapper clearfix">
+		       
+        <div id="banner">        
+        	<div id="logo"><a href=""><img src="images/logo.png" alt="logo" height="30%" width="30%"></a></div> 
+        </div>
+
+        <nav id="topnav" role="navigation">
+          <div class="menu-toggle">Menu</div>  
+            <ul class="srt-menu" id="menu-main-navigation" style="padding-bottom: 10px;">
+              <li class="current"><a href="index.html">Home</a></li>
+             <li>
+        				<a href="index.html">Assignments</a>
+        				<ul>
+                					<li><a href="AssignmentOne.html">Getting Started With GitHub</a></li>
+        					<li><a href="AssignmentTwo.html">Through Junctions</a></li>
+        					<li><a href="AssignmentThree.html">Hold it round</a></li>
+        					<li><a href="AssignmentFour.html">Sparkonics</a></li>
+                                               <li><a href="AssignmentFive.html">Tick Tick Run</a></li>
+                  <li><a href="AssignmentSix.html">Throughout Producing Electronics</a></li>
+        				</ul>
+        			</li>
+              <li><a href="final.html">Final Project</a></li>
+            </ul>     
+        </nav>
+  
+    </header><!-- end header -->
+ 
+    <section id="page-header" class="clearfix">    
+   
+    <div class="wrapper">
+      <h1><b>Sparkonics: Kicking it off With Circuits</b></h1>
+            		<img src="images/circuits.jpg" height="50%" width="50%"> 
+    </div>
+    </section>
+
+<div id="main" class="wrapper clearfix">    
+    
+	<section id="content">
+    <!-- ADD YOUR THE STEPS OF YOUR DOCUMENTATION BELOW -->
+    <!-- TO ADD IMAGES YOU WILL FIND IMG TAGS BETWEEN PARAGRAPHS -->
+    <!-- ADD THE NAME OF YOUR FILE -->
+                <h1><b>Overview</b></h1>
+                <p>Playing with electricity has a great <i>potential</i> of fun. We will try to use much of it as we can while building exponentially harder circuits:) 
+</p>
+
+
+                <h1><b>Tips to Building and Debugging Circuits</b></h1>
+<p>When connecting things together, results are not always as clean as the whatever website says. Below are some of the simple, common errors that take moments to solve and hopefully not hours to know they even exist “like a mischievous semicolon in coding”
+</p>
+<p><h2><mark>Short:</mark></h2>do not close a circuit without load. Connect a low-resistance component directly to the power source to avoid burning things up.
+</p>
+<p><h2><mark>Open:</mark></h2> do not forget to make a closed path for the flow of electricity. Make sure that no wires or components are faulty before working; you may disassemble the entire circuit because you think something is wrong while there is just a wire open to the infinitely resistant atmosphere. 
+</p>
+<p><h2><mark>Polarity:</mark></h2> take care which side is connected where. For polar components, the long positive anode should eventually be connected to the vcc of the power source, and the short cathode should eventually be connected to the ground of the power source.  
+</p>
+
+
+                <h1><b>Adding Context</b></h1>
+<p>This section will quickly cover the operating principals of diodes, capacitors, and NPN transistors. </p>
+
+<p><h2><mark>Diodes</mark></h2>Moving on to a more interesting component, diodes. You can know more about their structure through this <a href="https://www.allaboutcircuits.com/textbook/semiconductors/chpt-3/introduction-to-diodes-and-rectifiers/">link</a>. 
+For now, we will just say they allow the flow of current in one direction.</p>
+        		<img src="images/diode.jpg" height="50%" width="50%"> 
+<p>Notice how when we reverse the connection the voltage reading drops drastically from volts to millivolts. When diodes are connected with reversed terminals, they block the flow of electricity “to a certain point before collapsing like a senior student the night before physics exam”.
+</p>
+        		<img src="images/polar.jpg" height="60%" width="60%"> 
+
+<p>The previous diagram illustrates the polarity and connection of LEDs.
+</p>
+<img src="images/led.jpg" height="60%" width="60%"> 
+
+<p>Notice how when we reverse connect the lamp it blocks the flow of current?
+</p>
+
+<p><h2><mark>Capacitors</mark></h2>Watch the below video for illustration but in a nutshell, a capacitor stores energy as it charges and acts as an open circuit, and discharges and acts as a short circuit.
+</p>
+        	
+<video controls width="620" height="640" >
+
+  <source src="videos/how capacitors work in a circuit_Slice.mp4" type="video/mp4" >
+Your browser does not support the video tag.
+
+</video>
+	
+<p><h2><mark>Transistors</mark></h2>For deep info about transistors, check the refer to section at the bottom of the page. Now we will just deal with it as a switch: if there is current in the base, electricity will flow, if not, then it is like an open switch.
+</p>
+        		<img src="images/trans.jpg" height="70%" width="70%"> 
+<h2><mark>That is it! Let's get down where the action is!!</mark></h2>
+
+                <h1><b>Circuit 1: Calculate and Watch out</b></h1>
+<h2><mark>Components:</mark></h2>
+<ul>
+  <li>LED</li>
+  <li>Potentiometer</li>
+  <li>Power source</li>
+  <li>Fixed resistance </li>
+</ul>
+         
+<h2><mark>Functions and Expected Behaviors:</h2></mark>
+
+<p><h3><b>Resistors:</b></h3> pretty actionless alone, all they do is to provide a bit longer path for electricity to flow, hence consume some current. They do not even have polarity as illustrated below
+</p>
+          		<img src="images/elresist.jpg" height="75%" width="75%">
+<p>The resistor in heart is just a long thin wire. Now, if we add another wire to make a circuit with a shorter part of the fixed long wire, voila you have variable resistance! For more illustration, see below how a potentiometer works from the inside out
+</p>
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/potentiometer on the field.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>To add context, let's connect a lamp to see what is realy happening after connecting power!</p>
+<p>PS:you can find all the schematics, projects, and source files at the end of this page</p>
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/pot burning a lamp.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Notice how when the pot is rotated all the way around the LED burns? Short circuit!! We eliminated resistance completely, return to the pot video and try to visualize the flow of electricity 
+</p>
+
+<p><h3><b>Checking the Numbers</b></h3> After trying out different values of resistance with the potentiometer, now we can pick a decent brightness and replace it with a fixed resistor. 
+By simple physics, we know that V = IR. And by simple math, we can deduce that V<sub>resistor</sub> * R<sub>LED</sub> = V<sub>LED</sub> * R<sub>resistor</sub>. In the LED's datasheet: find the resistance and voltage of the lamp, subtract the V<sub>LED</sub> from total resistance, and solve for R<sub>resistor</sub>.</p>
+
+
+
+<h1><b>Circuit 2: right OR left?</b></h1>
+<h2><mark>Components:</mark></h2>
+<ul>
+  <li>LED</li>
+  <li>2 switches</li>
+  <li>Power source</li>
+  <li>Fixed resistance </li>
+</ul>
+         
+<h2><mark>Functions and Expected Behaviors:</h2></mark>
+
+<p><h3><b>Switches:</b></h3>How can different switches be manipulated to allow current flow under certain conditions? This circuit is meant to investigate what connections to apply if we want to implement certain logical commands -in other words creating logic gates.</p>
+          		
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/or gate.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Using two switches allows each switch to work as an on and off, reverse to the other switch. It is an or gate!! The lamp needs o receive signal from one and only one switch in order to operate.
+</p>
+
+<p>What if we replace the inputs and outputs of both switches?</p>
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/and gate.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>With this little modification, the circuit can only operate if it receives two true signals. An and gate! 
+</p>
+
+
+
+
+
+
+
+
+
+<h1><b>Circuit 3: Flashes</b></h1>
+<h2><mark>Components:</mark></h2>
+<ul>
+  <li>LED</li>
+  <li>Capacitor</li>
+  <li>Power source</li>
+  <li>Fixed resistance </li>
+</ul>
+         
+<h2><mark>Functions and Expected Behaviors:</h2></mark>
+
+<p><h3><b>Capacitors:</b></h3>How do capacitors affect the behaviour of components in a circuit?</p>
+          		
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/capacitor circuit discharging.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Notice how the led only turns immediately after connecting power then drastically fades? Since the capacitor is connected in series with the lamp, it must act as a short circuit for the led to turn on. This is achieved when the capacitor is charging. Once it is done, it acts as an open circuit and the lighting dies…or not?
+
+Actually, both charging and discharging capacitors are exponential processes. You pretty much will not live to see the point where the capacitor truly fully discharges. Luckily, it is valid to assume things in physics
+“couldn’t attach my tinkercad sim for this since I don’t want my device to go into an infinite loop”
+</p>
+
+<p>Would it matter if the capacitor is connected in series or parallel?</p>
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/capacitor series vs parallel demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>Parallel: the fading rate decreases --> the ability to store electricity increases --> higher capacitance </p>
+<p>Series: fading rate increases --> the ability to store electricity decreases --> lower capacitance</p>
+<p>Voltage is divided in series, so the capacitors take a longer time to charge. In parallel connections, voltage is the same in all paths hence all capacitors charge simultaneously with the same max voltage. </p>
+
+
+
+
+
+
+
+
+
+
+
+<h1><b>Circuit 4: Sensors Calibrated</b></h1>
+<h2><mark>Components:</mark></h2>
+<ul>
+  <li>LED</li>
+  <li>Photoresistor</li>
+  <li>Power source</li>
+  <li>Transistor</li>
+  <li>Potentiometer</li>
+  <li>Fixed resistance </li>
+</ul>
+         
+<h2><mark>Functions and Expected Behaviors:</h2></mark>
+
+<p><h3><b>Photoresistor</b></h3>LDRs or photoresistors change resistance according to surrounding brightness. When there is no light around, it has a huge resistance value.</p>
+          		
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/ldr and transis.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>What is happening up there? A key fact to start with: more current flows in the path of least resistance. When it is dark, the LDR has high resistance. Therefore, current skips the LDR and flows into the transistor's base switching it on and closing the LED's circuit. See below for an illustration of the current flow.</p>
+            		<img src="images/ci1.jpg" height="55%" width="55%"> 
+
+<p>Blue arrows represent the current that activates the transistor. Pink arrows represent the current that activates the lamp. Notice that no current passes through the LDR.</p>
+
+            		<img src="images/ci2.jpg" height="55%" width="55%"> 
+
+<p>When it is bright, the LDR has low resistance. Therefore, current flows through the LDR and skips the transistor's base, keeping it off. 
+<p>Now what happens if we swap the potentiometer and the transistor?</p>
+<video controls width="520" height="540" autoplay muted>
+  <source src="videos/ldr vs pot.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<p>The LDR is now not connected to the transistor, therefore it lost its control over the LED. Lighting now is dependent only on the potentiometer regardless of the sensor's reading. </p>
+
+<h1><b>References</b></h1>
+<p>[1]  <a href ="https://arduinogetstarted.com/tutorials/arduino-potentiometer">Potentiometer </a></p>
+<p>[2]<a href = "https://www.youtube.com/watch?v=X4EUwTwZ110"> Capacitors</a></p> 
+<p>[3]<a href="https://www.tinkercad.com/things/eNDgprkBIZE-brilliant-bojo-juttuli/editel?sharecode=dfr1IjG1hS12TLT6sml-TAgkn2wbgMj3_JaR31nbqVU"> Circuit 1</a></p>
+<p>[4]<a href="https://www.tinkercad.com/things/2QpKICrNwy4-funky-uusam-blad/editel?sharecode=iy8Z7Sb8jlOhneNWkInhqDH7Uizk8V40JAGaQ85cxJ0"> Circuit 2</a></p>
+<p>[5]<a href=" https://www.tinkercad.com/things/2BnXnzs9Ilp-smooth-fyyran-jaban/editel?sharecode=umKdNv9HyQVsH5R-vK9Q6zXwG4V1sm6R2PFpPad6E8s"> Circuit 4</a></p>
+<p>[6]<a href=" https://drive.google.com/drive/folders/1RJyrL7FE3Im2OiWBxH_7SRIjQsyF22Nd?usp=sharing"> Materials and source files</a></p>
+
+
+
+
+</section><!-- #end content area -->
+      
+      
+    <!-- sidebar -->    
+    <aside>
+        <h2>See Also: </h2>
+            <nav id="secondary-navigation">
+                    <ul>
+                         					<li><a href="AssignmentOne.html">Getting Started With GitHub</a></li>
+        					<li><a href="AssignmentTwo.html">Through Junctions</a></li>
+        					<li><a href="AssignmentThree.html">Hold it round</a></li>
+                                             <li><a href="AssignmentFive.html">Tick Tick Run</a></li>
+                  <li><a href="AssignmentSix.html">Throughout Producing Electronics</a></li>
+        					
+                    </ul>
+             </nav>
+      </aside><!-- #end sidebar -->
+    
+    
+    
+</div><!-- #end div #main .wrapper -->
+
+
+
+
+
+<!-- footer area -->    
+<footer>
+        <div id="colophon" class="wrapper clearfix">
+          <h2 style="padding-left: 30px;">PROUDLY MADE BY MAKERS</h2>
+            <img src="images/logo.png" height="30%" width="30%">
+        </div>
+        
+    </footer><!-- #end footer area --> 
+
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.0.min.js">\x3C/script>')</script>
+
+<script defer src="js/flexslider/jquery.flexslider-min.js"></script>
+
+<!-- fire ups - read this file!  -->   
+<script src="js/main.js"></script>
+
+</body>
+</html>
